@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - export AWS_ACCOUNT_ID=1830-7145-2060
+      - export AWS_ACCOUNT_ID=183071452060
       - export AWS_DEFAULT_REGION=ap-northeast-2
       - export IMAGE_REPO_NAME=todo-app01
       - export IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
